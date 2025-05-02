@@ -1,0 +1,68 @@
+img{
+  width: 300px;
+  height: auto;
+  padding-right: 20px;
+}
+
+.paraimg{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.paragraph{
+  padding-left: 20px;
+  font-size: xxx-large;
+  word-spacing: 2px;
+}
+.paragraph b{
+  color: #f19320;
+}
+
+.card {
+  display: inline-block;
+  border-radius: 8px;
+  overflow: hidden;
+  width: fit-content;  /* Adapts to content width */
+}
+
+.card img {
+  display: block;
+  width: 100%;         /* Ensure image fills the card's width */
+  height: auto;        /* Maintain aspect ratio */
+}
+
+.card-body {
+  padding: 10px;
+  text-align: center;
+}
+
+.row11{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.row12{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.rows{
+  background-color: #fff2d4;
+}
+
+.btn{
+  background-color: #f19320;
+}
+
+.search-container{
+  display: flex;
+  justify-content: center;
+}
+.form{
+  border-radius: 10px;
+}

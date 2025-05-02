@@ -1,0 +1,6 @@
+.taco{
+  background-color: #f19320;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
