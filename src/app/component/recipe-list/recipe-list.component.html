@@ -1,86 +1,93 @@
-<div>
-  <div class="paraimg">
-    <div class="paragraph">
-      <p> <i>Cook  like a Pro with</i>  <br>
-        <i>Our</i>  <b> Easy </b>   <i>and</i>  <b> Tasty </b>  <br>
-        <i>Recipes</i> </p>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Liste des Recettes</title>
+</head>
+<body>
+  <!-- Filters -->
+  <section class="container py-5">
+    <h2 class="mb-4 text-center">Liste des Recettes</h2>
+    <div class="filters">
+      <button class="btn btn-outline-primary filter-btn active" data-filter="all">Toutes</button>
+      <button class="btn btn-outline-primary filter-btn" data-filter="gluten-free">Sans Gluten</button>
+      <button class="btn btn-outline-primary filter-btn" data-filter="vegan">Vegan</button>
+      <button class="btn btn-outline-primary filter-btn" data-filter="vegetarian">Végétarien</button>
+      <button class="btn btn-outline-primary filter-btn" data-filter="quick">Rapide</button>
     </div>
-    <div class="image">
-      <img src="/assets/cook.jpg">
+    <div class="row g-4" id="recipes-list">
+      <!-- Recipe 1 -->
+      <div class="col-md-4 recipe-item gluten-free vegetarian quick">
+        <div class="card recipe-card">
+          <img src="/assets/tacos.jpg" class="card-img-top" alt="Salade Fraîche">
+          <div class="card-body">
+            <h5 class="card-title">Salade Fraîche</h5>
+            <p class="card-text">Salade légère, sans gluten, végétarienne et rapide à préparer.</p>
+            <span class="badge bg-success">Sans Gluten</span>
+            <span class="badge bg-warning text-dark">Végétarien</span>
+            <span class="badge bg-info text-dark">Rapide</span>
+          </div>
+        </div>
+      </div>
+      <!-- Recipe 2 -->
+      <div class="col-md-4 recipe-item vegan gluten-free quick">
+        <div class="card recipe-card">
+          <img src="https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Bowl Vegan">
+          <div class="card-body">
+            <h5 class="card-title">Bowl Vegan</h5>
+            <p class="card-text">Un bowl 100% vegan, sans gluten et prêt en 15 minutes.</p>
+            <span class="badge bg-success">Sans Gluten</span>
+            <span class="badge bg-success">Vegan</span>
+            <span class="badge bg-info text-dark">Rapide</span>
+          </div>
+        </div>
+      </div>
+      <!-- Recipe 3 -->
+      <div class="col-md-4 recipe-item vegetarian">
+        <div class="card recipe-card">
+          <img src="https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Gâteau au Chocolat">
+          <div class="card-body">
+            <h5 class="card-title">Gâteau au Chocolat</h5>
+            <p class="card-text">Un dessert fondant, parfait pour les végétariens.</p>
+            <span class="badge bg-warning text-dark">Végétarien</span>
+          </div>
+        </div>
+      </div>
+      <!-- Recipe 4 -->
+      <div class="col-md-4 recipe-item vegan">
+        <div class="card recipe-card">
+          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Smoothie Vert">
+          <div class="card-body">
+            <h5 class="card-title">Smoothie Vert</h5>
+            <p class="card-text">Un smoothie vitaminé, 100% vegan.</p>
+            <span class="badge bg-success">Vegan</span>
+          </div>
+        </div>
+      </div>
+      <!-- Recipe 5 -->
+      <div class="col-md-4 recipe-item quick">
+        <div class="card recipe-card">
+          <img src="https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Wrap Rapide">
+          <div class="card-body">
+            <h5 class="card-title">Wrap Rapide</h5>
+            <p class="card-text">Un wrap délicieux à préparer en moins de 10 minutes.</p>
+            <span class="badge bg-info text-dark">Rapide</span>
+          </div>
+        </div>
+      </div>
+      <!-- Recipe 6 -->
+      <div class="col-md-4 recipe-item gluten-free">
+        <div class="card recipe-card">
+          <img src="https://images.unsplash.com/photo-1506089676908-3592f7389d4d?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Soupe Sans Gluten">
+          <div class="card-body">
+            <h5 class="card-title">Soupe Sans Gluten</h5>
+            <p class="card-text">Une soupe réconfortante, idéale pour les intolérants au gluten.</p>
+            <span class="badge bg-success">Sans Gluten</span>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-
-  <div class="rows">
-    <div class="row11">
-
-      <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="/assets/tacos.jpg" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">tacos</h5>
-          <a routerLink="recipe-detail" class="btn">see more</a>
-        </div>
-      </div>
-
-      <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="/assets/tacos.jpg" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">tacos</h5>
-          <a routerLink="recipe-detail" class="btn">see more</a>
-        </div>
-      </div>
-
-      <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="/assets/tacos.jpg" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">tacos</h5>
-          <a routerLink="recipe-detail" class="btn">see more</a>
-        </div>
-      </div>
-
-      <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="/assets/tacos.jpg" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">tacos</h5>
-          <a routerLink="recipe-detail" class="btn">see more</a>
-        </div>
-      </div>
-
-    </div>
-    <div class="row12">
-
-      <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="/assets/tacos.jpg" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">tacos</h5>
-          <a routerLink="recipe-detail" class="btn">see more</a>
-        </div>
-      </div>
-
-      <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="/assets/tacos.jpg" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">tacos</h5>
-          <a routerLink="recipe-detail" class="btn">see more</a>
-        </div>
-      </div>
-
-      <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="/assets/tacos.jpg" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">tacos</h5>
-          <a routerLink="recipe-detail" class="btn">see more</a>
-        </div>
-      </div>
-
-      <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="/assets/tacos.jpg" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">tacos</h5>
-          <a routerLink="recipe-detail" class="btn">see more</a>
-        </div>
-      </div>
-
-
-    </div>
-  </div>
-</div>
+  </section>
+</body>
+</html>

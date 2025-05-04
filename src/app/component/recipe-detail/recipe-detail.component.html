@@ -1,6 +1,75 @@
-<div>
-  <div class="taco">
-    <h1>tacos</h1>
-    <h4>vegetarian</h4>
-  </div>
-</div>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Détail de la Recette</title>
+
+</head>
+<body>
+  <section class="container py-5">
+    <div class="row">
+      <!-- Recipe Image and Info -->
+      <div class="col-lg-6 mb-4">
+        <img src="https://images.unsplash.com/photo-1512058564366-c9e3e0466e9b?auto=format&fit=crop&w=800&q=80" alt="Salade Fraîche" class="recipe-img mb-3">
+        <div>
+          <span class="badge bg-success">Sans Gluten</span>
+          <span class="badge bg-warning text-dark">Végétarien</span>
+          <span class="badge bg-info text-dark">Rapide</span>
+        </div>
+      </div>
+      <!-- Recipe Details -->
+      <div class="col-lg-6">
+        <h2>Salade Fraîche</h2>
+        <p class="text-muted">Par <strong>Chef Marie</strong> | 15 min | Facile</p>
+        <h5>Ingrédients</h5>
+        <ul>
+          <li>1 concombre</li>
+          <li>2 tomates</li>
+          <li>1 oignon rouge</li>
+          <li>100g de feta</li>
+          <li>Olives noires</li>
+          <li>Huile d'olive, sel, poivre</li>
+        </ul>
+        <h5>Préparation</h5>
+        <ol>
+          <li>Laver et couper les légumes en dés.</li>
+          <li>Émincer l'oignon rouge.</li>
+          <li>Mélanger tous les ingrédients dans un saladier.</li>
+          <li>Assaisonner avec l'huile d'olive, le sel et le poivre.</li>
+          <li>Ajouter la feta émiettée et les olives.</li>
+          <li>Servir frais.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Comments Section -->
+    <div class="row mt-5">
+      <div class="col-lg-8 mx-auto">
+        <h4>Commentaires</h4>
+        <div id="comments-list">
+          <div class="comment">
+            <strong>Paul</strong> <span class="text-muted small">- il y a 2 jours</span>
+            <p>Recette super facile et délicieuse, merci !</p>
+          </div>
+          <div class="comment">
+            <strong>Sophie</strong> <span class="text-muted small">- il y a 1 jour</span>
+            <p>J'ai ajouté un peu de menthe, c'était parfait pour l'été.</p>
+          </div>
+        </div>
+        <form id="comment-form" class="mt-4">
+          <div class="mb-3">
+            <label for="username" class="form-label">Votre nom</label>
+            <input type="text" class="form-control" id="username" required>
+          </div>
+          <div class="mb-3">
+            <label for="comment" class="form-label">Votre commentaire</label>
+            <textarea class="form-control" id="comment" rows="3" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Ajouter un commentaire</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

@@ -1,13 +1,32 @@
-<nav>
-  <h1><b>C</b>ook.</h1>
-  <div>
-    <a routerLink="home">Home</a>
-    <a routerLink="recipes">Recipes</a>
-
-    <div class="search-container">
-      <form class="form" action="">
-        <input type="text" placeholder="Search.." name="search">
-        <button type="submit">Search</button>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">FlavorShare</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <!-- Category Links -->
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" href="recettes.html?cat=toutes">Toutes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="recettes.html?cat=gluten-free">Sans Gluten</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="recettes.html?cat=vegan">Vegan</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="recettes.html?cat=vegetarian">Végétarien</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="recettes.html?cat=quick">Rapide</a>
+        </li>
+      </ul>
+      <!-- Search Bar -->
+      <form class="d-flex" role="search" action="recettes.html" method="get">
+        <input class="form-control me-2" type="search" placeholder="Rechercher une recette..." aria-label="Search" name="q">
+        <button class="btn btn-outline-light" type="submit">Rechercher</button>
       </form>
     </div>
   </div>
